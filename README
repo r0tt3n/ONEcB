@@ -1,0 +1,8 @@
+ONEcB, A one click backup program in python.
+
+This program doesn't do anything that you couldn't do better
+by dragging and dropping files. I made it to learn about tkinter.
+
+It will backup your user directory to a folder called backup
+in whichever directory it was run from.
+

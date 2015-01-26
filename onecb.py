@@ -1,5 +1,5 @@
 ### ONEcB - One Click Backup v1.0 by G.C. Gerba
-import sys
+import ttk
 import os
 import shutil
 from tkinter import *
@@ -15,7 +15,7 @@ label = Label(image=photo).place(x=35, y=5)
 def copyhome():
     if os.name == 'posix' or os.name == 'nt':
         try:
-            shutil.copytree(source, destination)
+            shutil.copytree(source +str("/test"), destination)
             tkinter.messagebox.showinfo("Success!", "Files were successfully copied")
         except:
             tkinter.messagebox.showerror("Error", "Permission Denied\nor folder alredy exists")
@@ -28,4 +28,5 @@ guiexit.place(x=130,y=60)
 gui.mainloop()
 
 ### TODO:
+### progress bar.
 ### real world test.
